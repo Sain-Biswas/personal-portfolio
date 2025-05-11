@@ -1,5 +1,21 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+
   "extends": "astro/tsconfigs/strict",
+
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"]
+
+  "exclude": ["dist"],
+
+  // User Defined
+
+  "compilerOptions": {
+    // Path reference
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "~/*": ["./*"],
+      "#/*": ["./public/*"]
+    }
+  }
 }
