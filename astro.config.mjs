@@ -12,7 +12,7 @@ export default defineConfig({
     fonts: [
       {
         provider: "local",
-        cssVariable: "--font-rec",
+        cssVariable: "--font-reca",
         name: "Recursive",
         variants: [
           {
@@ -45,15 +45,29 @@ export default defineConfig({
             style: "italic",
             src: ["./src/assets/fonts/RecursiveMonoCslSt-SmBdItalic.woff2"],
           },
+        ],
+      },
+      {
+        name: "BebasNeue",
+        provider: "local",
+        cssVariable: "--font-bebasa",
+        variants: [
           {
-            weight: 900,
+            weight: 400,
+            src: ["./src/assets/fonts/BebasNeue-Regular.woff2"],
             style: "normal",
-            src: ["./src/assets/fonts/RecursiveMonoCslSt-Black.woff2"],
           },
+        ],
+      },
+      {
+        name: "Adoria",
+        provider: "local",
+        cssVariable: "--font-adoriaa",
+        variants: [
           {
-            weight: 900,
-            style: "italic",
-            src: ["./src/assets/fonts/RecursiveMonoCslSt-BlkItalic.woff2"],
+            weight: 400,
+            src: ["./src/assets/fonts/Adoria.otf"],
+            style: "normal",
           },
         ],
       },
